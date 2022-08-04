@@ -4,6 +4,10 @@
     justify-content: space-between;
     padding: 40px 0 0 55px;
     
+    @media (max-width: 768px) {
+        padding-top: 0;
+    }
+
     @media (max-width: 400px) {
         padding: 24px 24px 0;
 
@@ -13,14 +17,6 @@
         }
     }
 
-    @media (max-width: 768px) {
-        padding-top: 0;
-
-        .logo{
-            width: 40px;
-            height: 40px;
-        }
-    }
 
     &__line{
         flex: 1;

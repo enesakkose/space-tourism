@@ -1,0 +1,28 @@
+
+.exploreBtn{
+    position: relative;
+    width: 274px;
+    height: 274px;
+    background-color: $WHITE;
+    font-size: 32px;
+    border-radius: 50%;
+    color: $BLACK;
+    font-family: 'Bellefair', sans-serif;
+    transition: 500ms box-shadow ease-in-out;
+
+    &:hover{
+        box-shadow: 0 0 1px 80px rgba($GRAY, 0.3),
+    }
+
+    @media (max-width: 768px) {
+        width: 242px;
+        height: 242px;
+        
+    }
+    
+    @media (max-width: 400px) {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+} 

@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  
+}
+
+:root {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $WHITE;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+h1{
+  font-size: 150px;
+
+  @media (max-width: 768px) {
+    font-size: 100px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 80px;
+  }
+}
+
+h2{
+  font-size: 100px;
+
+  @media (max-width: 768px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 56px;
+  }
+
+}
+
+h3{
+  font-size: 32px;
+  color: rgba($WHITE, .3);
+}
+
+h4{
+  font-size: 28px;
+  letter-spacing: 4.5px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  color: $BLUE;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+h5{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 28px;
+  letter-spacing: 4.5px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  color: $WHITE;
+  padding-bottom: 64px;
+
+
+  span{
+    font-weight: 600;
+    color: $GRAY;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding-top: $PXL;
+    padding-bottom: 60px;
+    padding-left: 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 16px;
+    justify-content: center;
+    padding: 24px 0 32px; 
+  }
+}
+
+h6{
+  font-size: 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.3px;
+  font-weight: 400;
+  color: $BLUE;
+}
+
+a{
+  color: $WHITE;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container{
+  padding-top: 75px;
+  padding-left: 166px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-left: 55px;
+  }
+
+  @media (max-width: 400px) {
+    padding: $PL $PL $PXXL;
+  }
+}
+
+p{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  color: $BLUE;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+
+  @media (max-width: 768px) {
+      text-align: center;  
+  }
+
+  @media (max-width: 400px) {
+    font-size: 15px;
+  }
+}
+
+button{
+  cursor: pointer;
+  background-color: transparent;
+}

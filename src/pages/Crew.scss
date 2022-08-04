@@ -1,0 +1,70 @@
+.crew{
+    background: url('../assets/crew/background-crew-desktop.jpg') center center / cover no-repeat;
+    height: 100%;
+
+    @media (max-width: 768px) {
+        background: url('../assets/crew/background-crew-tablet.jpg') center center / cover no-repeat;
+    }
+
+    @media (max-width: 400px) {
+        background: url('../assets/crew/background-crew-mobile.jpg') center center / cover no-repeat;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    p{
+        max-width: 437px;
+    }
+    
+
+    &__main{
+        
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+
+            &__slide{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding-top: 120px;
+
+            button{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: rgba($WHITE, .17);
+
+                &:hover{
+                    background-color: rgba($WHITE, .47);
+                }
+            }
+
+            .activeSlide{
+                background-color: $WHITE;
+                &:hover{
+                    background-color: $WHITE;
+                }
+                }
+            } 
+        }
+        img{
+            position: fixed;
+            right: 5%;
+            bottom: 0;
+        }
+        
+    
+    }
+}

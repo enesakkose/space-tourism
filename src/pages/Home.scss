@@ -1,6 +1,6 @@
 .home{
     background: url('../assets/home/background-home-desktop.jpg') center center / cover no-repeat;
-    
+    min-height: 100vh;
 
     @media (max-width: 768px) {
         background: url('../assets/home/background-home-tablet.jpg') center center / cover no-repeat;
@@ -11,17 +11,15 @@
     }
 
     .container{
-        display: flex;
-        flex-direction: column;
+        
         
     }
 
 
     &__main{
-        flex: 1;
         display: grid;
-        grid-template-columns: .6fr .7fr;
-        place-items: center;
+        grid-template-columns: 1fr 1.1fr;
+        
         
         @media (max-width: 768px) {
             grid-template-columns: 1fr;
@@ -50,3 +48,5 @@
         
     }
 }
+
+//todo  will be repaired of amk home page

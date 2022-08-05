@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import Header from '@/components/Header'
 import data from '@/data.json'
+import { useMediaQuery } from 'react-responsive'
 import './Technology.scss'
 
 function Technology() {
 
-  const [ no, setNo ] = useState(0) 
-
+  const [ no, setNo ] = useState(0)
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  
   return (
     <div className='technology'>
         <Header/>
@@ -28,7 +30,7 @@ function Technology() {
             </div>
           </div>
           <div className="technology__main__img">
-            <img src={data.technology[no].images.portrait} alt="" />
+            <img src={isTabletOrMobile ? data.technology[no].images.landscape : data.technology[no].images.portrait} alt="" />
           </div>
         </main>
       </div>

@@ -11,21 +11,52 @@
     }
 
     .container{
+        @media (max-width:768px) {
+            padding: 0;
+        }
+    }
 
+    h5{
+        @media (max-width:768px) {
+            padding-left: 38.5px;
+        }
+        @media (max-width:400px) {
+            padding-left: 0;
+        }
     }
 
     &__main{
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+            gap: 56px;
+        }
         
         &__text{
             display: flex;
+            align-items: center;
             gap: 80px;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                gap: 44px;
+            }
+
+            @media (max-width:768px) {
+                gap: 26px;
+            }
 
             &__sliderBtn{
                 display: flex;
                 flex-direction: column;
                 gap: 32px;
+
+                @media (max-width:768px) {
+                    flex-direction: row;
+                    gap: 16px;
+                }
 
                 button{
                     width: 80px;
@@ -35,6 +66,17 @@
                     font-size: 32px;
                     border: 1px solid rgba($WHITE, .25);
                     font-family: 'Bellefair', sans-serif;
+
+                    @media (max-width:768px) {
+                        width: 58px;
+                        height: 58px;
+                    }
+
+                    @media (max-width:768px) {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                    }
                 }
 
                 .active{
@@ -45,11 +87,57 @@
             }
 
             &__info{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                @media (max-width:768px) {
+                    align-items: center;
+                    padding-bottom: 94px;
+                }
+
+                @media (max-width:400px) {
+                    padding: 0 24px;
+                }
+
                 h2{
                     font-size: 56px;
+
+                    @media (max-width:768px) {
+                        font-size: 24px;
+                    }
+                }
+
+                p{
+                    max-width: 444px;
+                    letter-spacing: 1.65px;
+
+                    @media (max-width:768px) {
+                        letter-spacing: .6px;
+                        line-height: 28px;
+                    }
+
+                    @media (max-width:400px) {
+                        letter-spacing: 1.3px;
+                        line-height: 25px;
+                    }
+                    
                 }
             }
 
+        }
+
+        &__img{
+            display: flex;
+            justify-content: end;
+
+            @media (max-width:768px) {
+                grid-row: 1;
+                
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }

@@ -1,11 +1,8 @@
 import Crew from '@/pages/Crew'
 import Destination from '@/pages/Destination'
 import Technology from '@/pages/Technology'
-import { useState } from 'react'
-import { useRoutes } from 'react-router-dom'
-import Header from './components/Header'
 import Home from "./pages/Home"
-
+import { useRoutes } from 'react-router-dom'
 
 
 const routes = [

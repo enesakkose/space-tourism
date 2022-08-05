@@ -26,7 +26,10 @@ function Crew() {
                 </div>
 
               </div>
-              <img src={data.crew[no].images.png} alt="" />
+              <div className="img">
+                <img src={data.crew[no].images.png} alt="" />  
+              </div>
+              
             </main>
 
         </div>

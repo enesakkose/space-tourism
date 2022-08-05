@@ -1,6 +1,6 @@
 .technology{
     background: url('../assets/technology/background-technology-desktop.jpg') center center / cover no-repeat;
-    height: 100%;
+    min-height: 100vh;
 
     @media (max-width: 768px) {
         background: url('../assets/technology/background-technology-tablet.jpg') center center / cover no-repeat;
@@ -8,5 +8,48 @@
 
     @media (max-width: 400px) {
         background: url('../assets/technology/background-technology-tablet.jpg') center center / cover no-repeat;
+    }
+
+    .container{
+
+    }
+
+    &__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        &__text{
+            display: flex;
+            gap: 80px;
+
+            &__sliderBtn{
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                button{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    color: $WHITE;
+                    font-size: 32px;
+                    border: 1px solid rgba($WHITE, .25);
+                    font-family: 'Bellefair', sans-serif;
+                }
+
+                .active{
+                    background-color: $WHITE;
+                    color: $BLACK;
+                }
+                
+            }
+
+            &__info{
+                h2{
+                    font-size: 56px;
+                }
+            }
+
+        }
     }
 }

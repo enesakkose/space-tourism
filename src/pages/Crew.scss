@@ -19,6 +19,10 @@
             gap: 0;
             padding-right: 55px;
         }
+
+        @media (max-width:400px) {
+            padding-right: 28px;
+        }
     }
 
     h1{
@@ -41,6 +45,10 @@
         @media (max-width:768px) {
             max-width: 527px;
             letter-spacing: .8px;
+        }
+
+        @media (max-width:768px) {
+            letter-spacing: 1.2px;
         }
     }
     
@@ -68,7 +76,9 @@
             }
 
             @media (max-width:400px) {
-                
+                display: grid;
+                grid-template-rows: auto;
+                place-items: center;
             }
 
         &__slide{
@@ -79,6 +89,12 @@
 
             @media (max-width:768px) {
                 padding-top: 40px;
+            }
+
+            @media (max-width:768px) {
+               grid-row: 1 / 2;
+               padding-top: 0;
+               gap: 16px;
             }
             
 
@@ -91,6 +107,11 @@
                 &:hover{
                     background-color: rgba($WHITE, .47);
                 }
+
+                @media (max-width:400px) {
+                    width: 10px;
+                    height: 10px;
+                }
             }
 
             .activeSlide{
@@ -102,31 +123,31 @@
             }
         } 
     }
+
+    .img{
+
         img{
             position: fixed;
             right: 5%;
-            bottom: 0;
-            animation-name: example;
-            animation-duration: 1s;
-
-            @media (max-width:768px) {
-                position: static;
-                width: 51%;
-                height: 51%;
-            }
-
-            @media (max-width:768px) {
-                border-bottom: 1px solid $GRAY;
-            }
-
+            bottom: 0; 
         }
 
-        @keyframes example {
-            from {right: -100%;}
-            to {right: 5%;}
+        @media (max-width:768px) {
+            img{
+              position: static;
+              width: 65%;
+              height: 65%;  
+            }
+            
+            display: flex;
+            justify-content: center;
         }
-    
+
+        @media (max-width:400px) {
+            border-bottom: 1px solid $GRAY;
+        }
+
+      }
     }
 }
 
-//todo crew text info sliderı başa getir konumlandırmayla ya flex ya grid grid row x / x gibi

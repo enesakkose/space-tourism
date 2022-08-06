@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <g id="Group">
-    <path d="M0 0L24 0L24 3L0 3L0 0Z" id="Rectangle" fill="#D0D6F9" fill-rule="evenodd" stroke="none" />
-    <path d="M0 9L24 9L24 12L0 12L0 9Z" id="Rectangle-Copy" fill="#D0D6F9" fill-rule="evenodd" stroke="none" />
-    <path d="M0 18L24 18L24 21L0 21L0 18Z" id="Rectangle-Copy-2" fill="#D0D6F9" fill-rule="evenodd" stroke="none" />
-  </g>
-</svg>
